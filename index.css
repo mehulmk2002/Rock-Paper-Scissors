@@ -1,0 +1,317 @@
+body {
+    background: #8CC461;
+    font-family: Roboto;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* scoreboard */
+.rectangle {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    height: 158px;
+    width: 800px;
+    left: 240px;
+    top: 62px;
+    border: 3px solid #FFFFFF;
+    border-radius: 13px;
+    padding: 10px;
+}
+
+.title_label {
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 47px;
+    letter-spacing: 0.1em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.score {
+    display: flex;
+    flex-direction: row;
+}
+
+.scoreboard {
+    height: 128px;
+    width: 139px;
+    margin: 0 5px;
+    background: #FFFFFF;
+    border-radius: 9px;
+    text-align: center;
+    padding: 8px;
+}
+
+.scoreboard label {
+    display: inline-block;
+    width: 100%;
+    color: #656565;
+
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+
+}
+
+.count_score {
+    font-family: Roboto;
+    font-size: 68px;
+    font-weight: 700;
+    line-height: 80px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #252525;
+
+}
+
+/* Choice Section */
+.image_box {
+    background-color: #FFFFFF;
+    height: 110px;
+    width: 110px;
+    border-radius: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#rock_box {
+    border: 15px solid #0074B6;
+}
+
+#scissor_box {
+    border: 15px solid #BD00FF;
+}
+
+#paper_box {
+    border: 15px solid #FFA943;
+}
+
+.img_box {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/* result section */
+#result_part {
+    position: relative;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+#play_btn {
+    height: 44px;
+    width: 174px;
+    left: 570px;
+    top: 547px;
+    border: 0;
+    border-radius: 9px;
+    background-color: #FFFFFF;
+    color: #252525;
+}
+
+#win_text {
+    font-weight: 800;
+    font-size: 39px;
+    line-height: 46px;
+    color: #FFFFFF;
+}
+
+.sub_win_text {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 29px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+
+
+
+
+
+#outer_border {
+    border: 15px solid #1DA82B;
+    border-radius: 50%;
+
+}
+
+.helper {
+    position: absolute;
+    top: 50%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.choosed-box {
+
+    height: 230px;
+    width: 230px;
+}
+
+#mid_border {
+    border: 15px solid #2E9A25;
+    border-radius: 50%;
+}
+
+#inner_border {
+    border: 30px solid #3B6720;
+    border-radius: 50%;
+}
+
+
+.choice_sec1 {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+
+}
+
+.line1 {
+
+    justify-items: center;
+}
+
+.choice_sec2 {
+    margin-top: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+.left_line {
+    position: relative;
+    bottom: 90px;
+    left: 25px;
+}
+
+.right_line {
+    position: relative;
+    bottom: 90px;
+    right: 25px;
+}
+
+#next-btn {
+    display: none;
+}
+
+
+.pic_detail {
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+
+    color: #FFFFFF;
+}
+
+.pick {
+    position: absolute;
+    top: -12px;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+}
+/*next and rule button degin*/
+
+.bottom_sec {
+    position: absolute;
+    bottom: 2vh;
+    right: 10px;
+}
+
+.bottom_sec button {
+    width: 119px;
+    height: 40px;
+    background-color: #8CC461;
+    border: 3px solid #FFFFFF;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 21px;
+    line-height: 82.19%;
+    /* or 17px */
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    margin: 0 15px;
+}
+
+/*rule popup menu degin*/
+#cross_btn {
+    width: 50px;
+    height: 50px;
+    background: #FF0000;
+    border: 5px solid #FFFFFF;
+    font-family: 'Dangrek';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 45px;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 50%;
+    z-index: 2;
+    position: absolute;
+    bottom: 62vh;
+    right: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+#rules {
+    height: 390px;
+    width: 350px;
+    background: #004429;
+    border: 7px solid #FFFFFF;
+    border-radius: 13px;
+    position: absolute;
+    bottom: 12vh;
+    right: 50px;
+    color: #FFFFFF;
+    padding: 5px;
+    display: none;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: '■';
+
+    color: rgb(255, 136, 0);
+    font-weight: bold;
+    display: inline-block;
+    width: 1em;
+    margin-left: -1em;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+
+}
+
+li {
+    margin: 20px 0;
+}

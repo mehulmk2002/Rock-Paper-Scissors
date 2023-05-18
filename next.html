@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Congratulation</title>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap"
+    rel="stylesheet"
+  />
+    <style>
+      body {
+        background: #8cc461;
+        font-family: Roboto;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      img {
+        display: block;
+        margin: auto;
+        
+      }
+      #cup {
+        position: relative;
+        bottom: 200px;
+        left: 10px;
+        z-index: 1;
+      }
+   
+      .encouragement {
+        position: relative;
+        bottom: 150px;
+        left: 10px;
+       font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 91px;
+        line-height: 107px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        color: #ffffff;
+      }
+      #result-text {
+       
+        font-family: "Roboto";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 41px;
+        line-height: 48px;
+        /* identical to box height */
+
+        text-align: center;
+        letter-spacing: 0.1em;
+
+        color: #ffffff;
+      }
+      #play_btn {
+        display: block;
+        height: 44px;
+        width: 174px;
+        border: 0;
+        border-radius: 9px;
+        background-color: #ffffff;
+        color: #252525;
+        margin: auto;
+        position: relative;
+        bottom: 100px;
+        left: 10px;
+      }
+#last-page{
+    width: 100%;
+    height: 80vh;
+}
+    </style>
+  </head>
+  <body style="padding-top: 40px;">
+    
+    <div id="last-page">
+    <img  src="stars.png" alt="stars" />
+    <img id="cup" src="Vector.png" alt="Vector" />
+    <div class="encouragement">
+      <div>HURRAY!!</div>
+      <div id="result-text">YOU WON THE GAME</div>
+    </div>
+
+    <button id="play_btn" onclick="location.href='index.html';">PLAY AGAIN</button>
+</div>
+  </body>
+</html>

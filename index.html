@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock_Paper_Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dangrek&family=Inter&family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+
+    <!-- Scoreboard -->
+    <div class="rectangle">
+      <div class="title_label">
+        <div>ROCK</div>
+        <div>PAPER</div>
+        <div>SCISSORS</div>
+      </div>
+      <div class="score">
+        <div class="scoreboard">
+          <label>YOUR</label>
+          <label>SCORE</label>
+          <div class="count_score" id="your_score">0</div>
+        </div>
+        <div class="scoreboard">
+          <label>COMPUTER</label>
+          <label>SCORE</label>
+          <div class="count_score" id="computer_score">0</div>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+    <br /><br />
+    <br /><br />
+    <!-- Choices -->
+    <div id="choice_section">
+      <div class="choice_sec1">
+        <div class="choices" onclick="choices(1)">
+          <div class="image_box" id="rock_box">
+            <div class="img_box"><img src="rock.png" /></div>
+          </div>
+        </div>
+        <div><img src="Line_1.png" class="line1" /></div>
+        <div class="choices" onclick="choices(2)">
+          <div class="image_box" id="scissor_box">
+            <div class="img_box"><img src="scissor.png" /></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="choice_sec2">
+        <div class="left_line"><img src="Line_3.png"/></div>
+        <div class="choices" onclick="choices(3)">
+          <div class="image_box" id="paper_box">
+            <div class="img_box"><img src="paper.png" /></div>
+          </div>
+        </div>
+        <div class="right_line"><img src="Line_2.png" /></div>
+      </div>
+    </div>
+    <!-- Result -->
+    <div id="result_part">
+      <div style="width: 226px;">
+      <div class="pick" style="display: inline-block; width: 226px; text-align: center;">YOU PICKED</div>
+      <div  id="your_outer_border" >
+        
+        <div id="your_mid_border" >
+          <div id="your_inner_border">
+            <div class="image_box" id="y_img_border">
+              <div class="img_box"><img id="my_img" src="paper.png" /></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div style="text-align: center; margin: 0 80px;">
+        <div id="win_text">YOU WIN</div>
+        <div class="sub_win_text">AGAINST PC</div>
+        <button id="play_btn" onclick="play_again()">PLAY AGAIN</button>
+      </div>
+      <div style="width: 226px;">
+        <div class="pick" style="display: inline-block; width: 226px; text-align: center;">PC PICKED</div>
+      <div id="outer_border" style="width: 226px;">
+        <div id="mid_border">
+          <div id="inner_border">
+            <div class="image_box" id="c_img_border">
+              <div class="img_box"><img id="cs_img" src="paper.png" /></div>
+            </div>
+          </div>
+        </div>
+      </div></div>
+    </div>
+
+
+    <!-- RuleSection -->
+    <div id="cross_btn" onclick="rules()">X</div>
+    <div id="rules">
+      <div
+        style="
+          font-weight: 500;
+          font-size: 29px;
+          line-height: 34px;
+          text-align: center;
+          margin-top: 10px;
+        "
+      >
+        Game Rules
+      </div>
+      <ul type="square">
+        <li>
+          Rock beats scissors, scissors beat<br />
+          paper, and paper beats rock.
+        </li>
+        <li>
+          Agree ahead of time whether you’ll<br />count off “rock, paper,
+          scissors, shoot” or just “rock, paper, scissors.”
+        </li>
+        <li>
+          Use rock, paper, scissors to settle<br />minor decisions or simply
+          play to<br />pass the time
+        </li>
+        <li>
+          If both players lay down the same<br />hand, each player lays down
+          another<br />hand
+        </li>
+      </ul>
+    </div>
+
+    <div class="bottom_sec">
+      <button onclick="show_rules()">RULES</button>
+      <button id="next-btn" onclick="next()">NEXT</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
